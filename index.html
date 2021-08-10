@@ -16,7 +16,7 @@
                 追加
             </button>
         </form>
-        <ul>
+        <ul v-cloak>
             <li v-for="(todo, index) in todos">
                 <input type="checkbox" v-model="todo.isDone">
                 <span v-bind:class="{ done: todo.isDone }">{{ todo.item }}</span>
